@@ -1,0 +1,67 @@
+.button-3D {
+  width: 90px;
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  display: inline-flex;
+  height: 90px;
+  font-size: 0.9375rem;
+  line-height: 46px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 444;
+}
+.button-3D .pane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("atras.png");
+  border-radius: 2px;
+  transition: all 0.4s ease;
+   background-size: contain;
+}
+.button-3D .pane.pane-front {
+  width: 90px;
+  height: 90px;
+  left:20px;
+  transform: rotateY(0deg) translateZ(44px);
+  background-image: url("frente.png");
+  background-size: contain;
+}
+.button-3D .pane.pane-right {
+  width: 90px;
+  height: 90px;
+  transform: rotateY(90deg) translateZ(64.5px);
+  background-image: url("direita.png");
+   background-size: contain;
+}
+.button-3D .pane.pane-left {
+  width: 90px;
+  height: 90px;
+  transform: rotateY(-90deg) translateZ(25px);
+  background-image: url("esquerda.png");
+  background-size: contain;
+}
+.button-3D .pane.pane-top {
+  width: 90px;
+  height: 90px;
+  left:20px;
+  top:-20px;
+  transform: rotateX(90deg) translateZ(25px);
+  background-image: url("topo.png");
+   background-size: contain;
+}
+
+.button-3D .pane.pane-bottom {
+
+  width: 90px;
+  height: 90px;
+  top:20px;
+  left:20px;
+  transform: rotateX(-90deg) translateZ(25px);
+  background-image: url("atras.png");
+   background-size: contain;
+}
